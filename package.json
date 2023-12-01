@@ -1,6 +1,14 @@
 {
+  "name": "@waynestate/ckeditor5-wsu",
+  "version": "0.0.1",
+  "description": "Wayne State University CKEditor 5 Customized Classic Build",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/waynestate/ckeditor5-wsu"
+  },
   "scripts": {
-    "build": "webpack --mode development"
+    "build-dev": "webpack --mode development",
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "@ckeditor/ckeditor5-basic-styles": "^40.1.0",
