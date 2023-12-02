@@ -10,9 +10,10 @@ import { Heading } from '@ckeditor/ckeditor5-heading';
 import {
     Image,
     ImageCaption,
-    ImageInsert,
+    ImageResize,
     ImageStyle,
     ImageToolbar,
+    ImageInsertViaUrl
 } from '@ckeditor/ckeditor5-image';
 import { Indent } from '@ckeditor/ckeditor5-indent';
 import { Link } from '@ckeditor/ckeditor5-link';
@@ -35,9 +36,10 @@ ClassicEditor.builtinPlugins = [
     Heading,
     Image,
     ImageCaption,
-    ImageInsert,
+    ImageResize,
     ImageStyle,
     ImageToolbar,
+    ImageInsertViaUrl,
     Indent,
     Italic,
     Link,
@@ -60,12 +62,35 @@ ClassicEditor.defaultConfig = {
             'link',
             'bulletedList',
             'numberedList',
+            '|',
+            'outdent',
+            'indent',
+            '|',
+            'insertImage',
             'blockQuote',
+            'insertTable',
+            'mediaEmbed',
             'undo',
             'redo'
         ]
     },
-    language: 'en'
+    language: 'en',
+    image: {
+        toolbar: [
+            'imageTextAlternative',
+            'toggleImageCaption',
+            'imageStyle:inline',
+            'imageStyle:block',
+            'imageStyle:side'
+        ]
+    },
+    table: {
+        contentToolbar: [
+            'tableColumn',
+            'tableRow',
+            'mergeTableCells'
+        ]
+    }
 };
 
 window.ClassicEditor = ClassicEditor;
