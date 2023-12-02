@@ -1,14 +1,16 @@
-import { Alignment } from '@ckeditor/ckeditor5-alignment';  // Importing the package.
+import { ClassicEditor as ClassicEditorBase } from '@ckeditor/ckeditor5-editor-classic';
+
+// Plugins to include in the build.
+import { Alignment } from '@ckeditor/ckeditor5-alignment';
 import { Autoformat } from '@ckeditor/ckeditor5-autoformat';
 import { Bold, Italic } from '@ckeditor/ckeditor5-basic-styles';
 import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
 import { Essentials } from '@ckeditor/ckeditor5-essentials';
 import { Heading } from '@ckeditor/ckeditor5-heading';
-import { ClassicEditor as ClassicEditorBase } from '@ckeditor/ckeditor5-editor-classic';
 import {
     Image,
     ImageCaption,
-    ImageInsertViaUrl,
+    ImageInsert,
     ImageStyle,
     ImageToolbar,
 } from '@ckeditor/ckeditor5-image';
@@ -25,15 +27,27 @@ import { TextTransformation } from '@ckeditor/ckeditor5-typing';
 export default class ClassicEditor extends ClassicEditorBase {}
 
 ClassicEditor.builtinPlugins = [
-    Essentials,
+    Alignment,
     Autoformat,
-    Bold,
-    Italic,
     BlockQuote,
+    Bold,
+    Essentials,
     Heading,
+    Image,
+    ImageCaption,
+    ImageInsert,
+    ImageStyle,
+    ImageToolbar,
+    Indent,
+    Italic,
     Link,
     List,
-    Paragraph
+    MediaEmbed,
+    Paragraph,
+    PasteFromOffice,
+    Table,
+    TableToolbar,
+    TextTransformation
 ];
 
 ClassicEditor.defaultConfig = {
