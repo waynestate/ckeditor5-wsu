@@ -15,15 +15,11 @@ These instructions will get you a copy of the project up and running on your loc
 ### Installing
 
 1. Run `npm install`
-2. Run `npm run build-dev` or `npm run build`
+2. Run `npm run build-dev` (dev) or `npm run build` (production)
 
-## Built With
+### Development
 
-* [CKEditor 5](https://ckeditor.com/ckeditor-5/) - The web framework used
-
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+1. Load the `test/index.html` in your browser and you should see the editor displayed.
 
 ## Authors
 
@@ -34,9 +30,3 @@ See also the list of [contributors](https://github.com/waynestate/ckeditor5-wsu/
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
