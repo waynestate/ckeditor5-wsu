@@ -6,6 +6,8 @@
 
 /* istanbul ignore if -- @preserve */
 
+/* istanbul ignore if: paranoid check -- @preserve */
+
 /* istanbul ignore next -- @preserve */
 
 /**
