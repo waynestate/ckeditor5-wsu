@@ -299,6 +299,14 @@
     "@ckeditor/ckeditor5-ui" "40.1.0"
     "@ckeditor/ckeditor5-utils" "40.1.0"
 
+"@ckeditor/ckeditor5-source-editing@^40.1.0":
+  version "40.1.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-source-editing/-/ckeditor5-source-editing-40.1.0.tgz#8d0695875a06407b4762d38b865f74fccfe675ac"
+  integrity sha512-cCeaBHMKCYqGnc2c+dO9Thx5lidcE8lPLg59pHvzJ8zkc+AUShyPiiJcaqsjhK9N/CvjOS81wsMjpYx3DXOAOQ==
+  dependencies:
+    "@ckeditor/ckeditor5-theme-lark" "40.1.0"
+    ckeditor5 "40.1.0"
+
 "@ckeditor/ckeditor5-table@^40.1.0":
   version "40.1.0"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-table/-/ckeditor5-table-40.1.0.tgz#328e43c7d787c7ec238b57339dacc7b288c4f4e7"
@@ -307,7 +315,7 @@
     ckeditor5 "40.1.0"
     lodash-es "4.17.21"
 
-"@ckeditor/ckeditor5-theme-lark@^40.1.0":
+"@ckeditor/ckeditor5-theme-lark@40.1.0", "@ckeditor/ckeditor5-theme-lark@^40.1.0":
   version "40.1.0"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-theme-lark/-/ckeditor5-theme-lark-40.1.0.tgz#6f8d492d05e81f3baf723e057493f8feb2d88684"
   integrity sha512-9ZoNRs3hOM7kltF//ChzMV1GSDuhgYaaeWx0jMMSoguwXyqc5Y3GfBXs2XtfDn9sXi2NytmC6mt2tZSZ6i+4ug==

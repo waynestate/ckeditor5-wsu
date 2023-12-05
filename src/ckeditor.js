@@ -15,15 +15,15 @@ import {
     ImageToolbar,
     ImageInsertViaUrl
 } from '@ckeditor/ckeditor5-image';
-import { Indent } from '@ckeditor/ckeditor5-indent';
+import { Indent, IndentBlock } from '@ckeditor/ckeditor5-indent';
 import { Link } from '@ckeditor/ckeditor5-link';
 import { List } from '@ckeditor/ckeditor5-list';
 import { MediaEmbed } from '@ckeditor/ckeditor5-media-embed';
 import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
 import { PasteFromOffice } from '@ckeditor/ckeditor5-paste-from-office';
+import { SourceEditing } from "@ckeditor/ckeditor5-source-editing";
 import { Table, TableToolbar } from '@ckeditor/ckeditor5-table';
 import { TextTransformation } from '@ckeditor/ckeditor5-typing';
-
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -41,12 +41,14 @@ ClassicEditor.builtinPlugins = [
     ImageToolbar,
     ImageInsertViaUrl,
     Indent,
+    IndentBlock,
     Italic,
     Link,
     List,
     MediaEmbed,
     Paragraph,
     PasteFromOffice,
+    SourceEditing,
     Table,
     TableToolbar,
     TextTransformation
@@ -55,6 +57,7 @@ ClassicEditor.builtinPlugins = [
 ClassicEditor.defaultConfig = {
     toolbar: {
         items: [
+            'sourceEditing',
             'heading',
             '|',
             'bold',
