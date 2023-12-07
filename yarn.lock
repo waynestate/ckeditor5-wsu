@@ -233,6 +233,14 @@
   dependencies:
     ckeditor5 "40.1.0"
 
+"@ckeditor/ckeditor5-html-support@^40.1.0":
+  version "40.1.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-html-support/-/ckeditor5-html-support-40.1.0.tgz#abc78489b12c6b21100c9e5966ece4463ab31eef"
+  integrity sha512-GS99frw1GAt7OgSwVEsVBwtmdQJ/Q8eURCUt+ENIond9DwsCoszJ2fbXv2kkquCiUzmPcd7v47GOvuQSQ+EV5Q==
+  dependencies:
+    ckeditor5 "40.1.0"
+    lodash-es "4.17.21"
+
 "@ckeditor/ckeditor5-image@^40.1.0":
   version "40.1.0"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-image/-/ckeditor5-image-40.1.0.tgz#5bc33178f7a476e602382c05e23e68c23544180f"
@@ -246,6 +254,13 @@
   version "40.1.0"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-indent/-/ckeditor5-indent-40.1.0.tgz#3a7beec4985af8558abcbb51846528ff69d328b5"
   integrity sha512-V23OcynvjSIavbnjaBwvB76AeTizkARRzttlK85FyGd/DyExYxnIyYY1yOMVjyj3xCZzKDq9B4GRVOoumMmWiQ==
+  dependencies:
+    ckeditor5 "40.1.0"
+
+"@ckeditor/ckeditor5-language@^40.1.0":
+  version "40.1.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-language/-/ckeditor5-language-40.1.0.tgz#df3200f38c7232be97de9af19686c738b6c33c47"
+  integrity sha512-dF2NE+dI0HeSs7MKsj5h6ZWuCONve0IZziO/sznntskybF//E34t2EkibknJo0tTTUtw5aMA7Seko4v8SLdQxg==
   dependencies:
     ckeditor5 "40.1.0"
 

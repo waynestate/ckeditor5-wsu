@@ -1,6 +1,6 @@
 {
   "name": "@waynestate/ckeditor5-wsu",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Wayne State University CKEditor 5 Customized Classic Build",
   "repository": {
     "type": "git",
@@ -20,7 +20,9 @@
     "@ckeditor/ckeditor5-editor-classic": "^40.1.0",
     "@ckeditor/ckeditor5-essentials": "^40.1.0",
     "@ckeditor/ckeditor5-heading": "^40.1.0",
+    "@ckeditor/ckeditor5-html-support": "^40.1.0",
     "@ckeditor/ckeditor5-image": "^40.1.0",
+    "@ckeditor/ckeditor5-language": "^40.1.0",
     "@ckeditor/ckeditor5-indent": "^40.1.0",
     "@ckeditor/ckeditor5-link": "^40.1.0",
     "@ckeditor/ckeditor5-list": "^40.1.0",

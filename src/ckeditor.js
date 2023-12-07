@@ -7,6 +7,7 @@ import { Bold, Italic } from '@ckeditor/ckeditor5-basic-styles';
 import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
 import { Essentials } from '@ckeditor/ckeditor5-essentials';
 import { Heading } from '@ckeditor/ckeditor5-heading';
+import { GeneralHtmlSupport } from '@ckeditor/ckeditor5-html-support';
 import {
     Image,
     ImageCaption,
@@ -16,6 +17,7 @@ import {
     ImageInsertViaUrl
 } from '@ckeditor/ckeditor5-image';
 import { Indent, IndentBlock } from '@ckeditor/ckeditor5-indent';
+import { TextPartLanguage } from '@ckeditor/ckeditor5-language';
 import { Link } from '@ckeditor/ckeditor5-link';
 import { List } from '@ckeditor/ckeditor5-list';
 import { MediaEmbed } from '@ckeditor/ckeditor5-media-embed';
@@ -33,6 +35,7 @@ ClassicEditor.builtinPlugins = [
     BlockQuote,
     Bold,
     Essentials,
+    GeneralHtmlSupport,
     Heading,
     Image,
     ImageCaption,
@@ -51,6 +54,7 @@ ClassicEditor.builtinPlugins = [
     SourceEditing,
     Table,
     TableToolbar,
+    TextPartLanguage,
     TextTransformation
 ];
 
@@ -58,11 +62,13 @@ ClassicEditor.defaultConfig = {
     toolbar: {
         items: [
             'sourceEditing',
+            'alignment',
             'heading',
             '|',
             'bold',
             'italic',
             'link',
+            'textPartLanguage',
             'bulletedList',
             'numberedList',
             '|',
@@ -77,7 +83,28 @@ ClassicEditor.defaultConfig = {
             'redo'
         ]
     },
-    language: 'en',
+    htmlSupport: {
+        allow: [
+        ],
+    },
+    language: {
+        textPartLanguage: [
+            { title: 'Arabic', languageCode: 'ar' },
+            { title: 'Chinese', languageCode: 'zh' },
+            { title: 'French', languageCode: 'fr' },
+            { title: 'German', languageCode: 'de' },
+            { title: 'Indonesian', languageCode: 'id' },
+            { title: 'Italian', languageCode: 'it' },
+            { title: 'Japanese', languageCode: 'ja' },
+            { title: 'Korean', languageCode: 'ko' },
+            { title: 'Latin', languageCode: 'la' },
+            { title: 'Portuguese', languageCode: 'pt' },
+            { title: 'Spanish', languageCode: 'es' },
+            { title: 'Thai', languageCode: 'th' },
+            { title: 'Turkish', languageCode: 'tr' },
+            { title: 'Vietnamese', languageCode: 'vi' },
+        ]
+    },
     image: {
         toolbar: [
             'imageTextAlternative',
